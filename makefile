@@ -16,6 +16,9 @@ new:
 	mkdir ${ALGOCAPS}/Java
 	touch ${ALGOCAPS}/Java/${ALGOCAPS}.java
 
+	mkdir ${ALGOCAPS}/Javascript
+	touch ${ALGOCAPS}/Javascript/${ALGO}.js
+
 	mkdir ${ALGOCAPS}/Ocaml
 	touch ${ALGOCAPS}/Ocaml/${ALGO}.ml
 
