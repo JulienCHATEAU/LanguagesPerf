@@ -1,0 +1,12 @@
+*
+!.gitignore
+!*.c
+!*.go
+!*.java
+!*.js
+!*.ml
+!*.php
+!*.py
+!*.rs
+!*.md
+!makefile
