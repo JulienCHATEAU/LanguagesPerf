@@ -25,5 +25,5 @@ def gray2bin(bits):
 	return b
 
 for i in range(pow(2, 25)):
-    enc = gray2bin(bin2gray(int2bin(i)))
-    bin2int(enc)
+	enc = bin2gray(int2bin(i))
+	gray2bin(enc)
