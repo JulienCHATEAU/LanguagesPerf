@@ -14,23 +14,23 @@ Java | | 11.0.3
 Javascript | | v13.1.0
 Ocaml | | 4.02.3
 Python | | 3.5.2
-Rust | | 
+Rust | |
 
 # Compile line
 
-| Language | Compile line 
+| Language | Compile line
 |---|---|
 C | gcc -o dijkstra dijkstra.c
 Go | go build -o dijsktra
 Java | javac Dijkstra.java
-Javascript | 
+Javascript |
 Ocaml | ocamlc -o dijkstra dijkstra.ml
-Python | 
+Python |
 Rust | rustc -o dijkstra dijkstra.rs
 
 # Execution line
 
-| Language | Execution line 
+| Language | Execution line
 |---|---|
 C | ./dijsktra
 Go | ./dijsktra
@@ -39,3 +39,6 @@ Javascript | js dijkstra.js
 Ocaml | ./dijsktra
 Python | python3 dijkstra.py
 Rust | ./dijkstra
+
+# Measure memory
+`/usr/bin/time -v ./prog`
