@@ -21,7 +21,7 @@ Rust | |
 | Language | Compile line
 |---|---|
 C | gcc -o <algo_name> <algo_name>.c
-Go | go build -o dijsktra
+Go | go build -o <algo_name>
 Java | javac <algo_name>.java
 Javascript |
 Ocaml | ocamlc -o <algo_name> <algo_name>.ml
@@ -32,11 +32,11 @@ Rust | rustc -o <algo_name> <algo_name>.rs
 
 | Language | Execution line
 |---|---|
-C | ./dijsktra
-Go | ./dijsktra
+C | ./<algo_name>
+Go | ./<algo_name>
 Java | java <algo_name>
 Javascript | js <algo_name>.js
-Ocaml | ./dijsktra
+Ocaml | ./<algo_name>
 Python | python3 <algo_name>.py
 Rust | ./<algo_name>
 
