@@ -18,6 +18,16 @@ run:
 	@javac ${ALGO}/Java/${ALGO}.java
 	@sudo ./run_exec "java ${ALGO}/Java/${ALGO}" ${RESULTS} "Java|"
 
+	@sudo ./run_exec "node ${ALGO}/Javascript/${ALGO}" ${RESULTS} "Javascript|"
+
+	@ocamlc -o ${ALGO}/Ocaml/exec ${ALGO}/Ocaml/${ALGO}.ml
+	@sudo ./run_exec ${ALGO}/Ocaml/exec ${RESULTS} "Ocaml|"
+
+	@sudo ./run_exec "python3 ${ALGO}/Python/${ALGO}.py" ${RESULTS} "Python|"
+
+	@rustc -o ${ALGO}/Rust/exec ${ALGO}/Rust/${ALGO}.rs
+	@sudo ./run_exec ${ALGO}/Rust/exec ${RESULTS} "Rust|"
+
 new:
 	@test ${ALGO}
 
