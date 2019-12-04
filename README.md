@@ -41,6 +41,12 @@ Python | python3 <algo_name>.py
 Rust | ./<algo_name>
 
 # Measure memory
-`/usr/bin/time -v ./exec 2>&1 | grep "Maximum resident"`
+`/usr/bin/time -v ./exec 2>&1 | grep "Maximum resident" | awk -F " " '{print $6}'`
+Gives KB
 
 # Measure instructions
+`perf stat -r 10 -x , ./exec 2>&1 | grep instructions | awk -F "," '{print $1}'`
+
+# Measure time
+`perf stat -r 10 -x \| ./exec 2>&1 | grep msec | awk -F "|" '{print $1}'`
+Gives msec
