@@ -50,3 +50,6 @@ Gives peak KB
 # Measure time
 `perf stat -r 10 -x \| ./exec 2>&1 | grep msec | awk -F "|" '{print $1}'`
 Gives msec
+
+# Get CPU model
+`cat /proc/cpuinfo | grep "model name" | head -n 1 | awk -F ":" '{print $2}' | xargs`

@@ -1,6 +1,7 @@
 ALGOCAPS=$(shell echo ${ALGO} | sed -e "s/\b\(.\)/\u\1/g")
 UUID=$(shell uuidgen)
 RESULTS:=$(ALGO)/Results-$(UUID).csv
+CPU:=$(shell cat /proc/cpuinfo | grep "model name" | head -n 1 | awk -F ":" '{print $$2}' | xargs)
 
 all:
 
@@ -27,6 +28,9 @@ run:
 
 	@rustc -o ${ALGO}/Rust/exec ${ALGO}/Rust/${ALGO}.rs
 	@sudo ./run_exec ${ALGO}/Rust/exec ${RESULTS} "Rust|"
+
+	@echo "" >> ${RESULTS}
+	@echo "CPU: ${CPU}" >> ${RESULTS}
 
 new:
 	@test ${ALGO}
