@@ -1,27 +1,27 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
- 
-public class Merge{
+
+public class MergeSort{
     public static <E extends Comparable<? super E>> List<E> mergeSort(List<E> m){
         if(m.size() <= 1) return m;
- 
+
         int middle = m.size() / 2;
         List<E> left = m.subList(0, middle);
         List<E> right = m.subList(middle, m.size());
- 
+
         right = mergeSort(right);
         left = mergeSort(left);
         List<E> result = merge(left, right);
- 
+
         return result;
     }
- 
+
     public static <E extends Comparable<? super E>> List<E> merge(List<E> left, List<E> right){
         List<E> result = new ArrayList<E>();
         Iterator<E> it1 = left.iterator();
         Iterator<E> it2 = right.iterator();
- 
+
 	E x = it1.next();
 	E y = it2.next();
         while (true){

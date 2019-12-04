@@ -1,0 +1,4 @@
+Language|Tool|Time(msec)|PeakMemory(KB)|Instructions
+C||0,56|1560|1626488
+Go||1,07|1592|2376951
+Java||121,91|36064|202602978
