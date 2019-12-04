@@ -41,4 +41,6 @@ Python | python3 dijkstra.py
 Rust | ./dijkstra
 
 # Measure memory
-`/usr/bin/time -v ./prog`
+`/usr/bin/time -v ./exec 2>&1 | grep "Maximum resident"`
+
+# Measure instructions
