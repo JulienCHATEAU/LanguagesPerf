@@ -6,9 +6,7 @@ var a = []int{563, 353, 321, -134, 109, -453, -236, 294, 107, 193, -398, -390, 1
 var s = make([]int, len(a)/2+1) // scratch space for merge step
  
 func main() {
-    fmt.Println("before:", a)
     mergeSort(a)
-    fmt.Println("after: ", a)
 }
  
 func mergeSort(a []int) {
