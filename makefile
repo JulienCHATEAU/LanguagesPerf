@@ -22,9 +22,6 @@ new:
 	mkdir ${ALGOCAPS}/Ocaml
 	touch ${ALGOCAPS}/Ocaml/${ALGO}.ml
 
-	mkdir ${ALGOCAPS}/PHP
-	touch ${ALGOCAPS}/PHP/${ALGO}.php
-
 	mkdir ${ALGOCAPS}/Python
 	touch ${ALGOCAPS}/Python/${ALGO}.py
 

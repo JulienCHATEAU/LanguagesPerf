@@ -5,7 +5,6 @@
 !*.java
 !*.js
 !*.ml
-!*.php
 !*.py
 !*.rs
 !*.md

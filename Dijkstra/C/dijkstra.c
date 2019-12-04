@@ -21,7 +21,7 @@ typedef struct {
     int vertices_len;
     int vertices_size;
 } graph_t;
- 
+
 typedef struct {
     int *data;
     int *prio;

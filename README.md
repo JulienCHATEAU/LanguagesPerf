@@ -1,6 +1,9 @@
 # Bible
 http://www.brendangregg.com/Perf/linux_observability_tools.png
 
+# New algo
+make new ALGO=<algo_name>
+
 # Language installation / version
 
 | Language | Installation | Dep Version
@@ -10,7 +13,6 @@ Go | | go1.13.4
 Java | | 11.0.3
 Javascript | | v13.1.0
 Ocaml | | 4.02.3
-PHP | | 7.0.33
 Python | | 3.5.2
 Rust | | 
 
@@ -23,7 +25,6 @@ Go | go build -o dijsktra
 Java | javac Dijkstra.java
 Javascript | 
 Ocaml | ocamlc -o dijkstra dijkstra.ml
-PHP | 
 Python | 
 Rust | rustc -o dijkstra dijkstra.rs
 
@@ -36,6 +37,5 @@ Go | ./dijsktra
 Java | java Dijkstra
 Javascript | js dijkstra.js
 Ocaml | ./dijsktra
-PHP | php dijkstra.php
 Python | python3 dijkstra.py
 Rust | ./dijkstra
