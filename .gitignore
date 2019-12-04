@@ -8,5 +8,6 @@
 !*.py
 !*.rs
 !*.md
+!*.csv
 !*/
 !makefile

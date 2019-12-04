@@ -21,7 +21,7 @@ Rust | |
 | Language | Compile line
 |---|---|
 C | gcc -o <algo_name> <algo_name>.c
-Go | go build -o dijsktra
+Go | go build -o <algo_name>
 Java | javac <algo_name>.java
 Javascript |
 Ocaml | ocamlc -o <algo_name> <algo_name>.ml
@@ -32,17 +32,17 @@ Rust | rustc -o <algo_name> <algo_name>.rs
 
 | Language | Execution line
 |---|---|
-C | ./dijsktra
-Go | ./dijsktra
+C | ./<algo_name>
+Go | ./<algo_name>
 Java | java <algo_name>
 Javascript | js <algo_name>.js
-Ocaml | ./dijsktra
+Ocaml | ./<algo_name>
 Python | python3 <algo_name>.py
 Rust | ./<algo_name>
 
-# Measure memory
+# Measure peak memory
 `/usr/bin/time -v ./exec 2>&1 | grep "Maximum resident" | awk -F " " '{print $6}'`
-Gives KB
+Gives peak KB
 
 # Measure instructions
 `perf stat -r 10 -x , ./exec 2>&1 | grep instructions | awk -F "," '{print $1}'`
@@ -50,3 +50,6 @@ Gives KB
 # Measure time
 `perf stat -r 10 -x \| ./exec 2>&1 | grep msec | awk -F "|" '{print $1}'`
 Gives msec
+
+# Get CPU model
+`cat /proc/cpuinfo | grep "model name" | head -n 1 | awk -F ":" '{print $2}' | xargs`
