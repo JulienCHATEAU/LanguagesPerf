@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Sierpinski_carpet {
+public class SierpinskiCarpet {
 
     public static boolean inCarpet(long x, long y) {
         while (x!=0 && y!=0) {
