@@ -20,13 +20,13 @@ Rust | |
 
 | Language | Compile line
 |---|---|
-C | gcc -o dijkstra dijkstra.c
+C | gcc -o <algo_name> <algo_name>.c
 Go | go build -o dijsktra
-Java | javac Dijkstra.java
+Java | javac <algo_name>.java
 Javascript |
-Ocaml | ocamlc -o dijkstra dijkstra.ml
+Ocaml | ocamlc -o <algo_name> <algo_name>.ml
 Python |
-Rust | rustc -o dijkstra dijkstra.rs
+Rust | rustc -o <algo_name> <algo_name>.rs
 
 # Execution line
 
@@ -34,11 +34,11 @@ Rust | rustc -o dijkstra dijkstra.rs
 |---|---|
 C | ./dijsktra
 Go | ./dijsktra
-Java | java Dijkstra
-Javascript | js dijkstra.js
+Java | java <algo_name>
+Javascript | js <algo_name>.js
 Ocaml | ./dijsktra
-Python | python3 dijkstra.py
-Rust | ./dijkstra
+Python | python3 <algo_name>.py
+Rust | ./<algo_name>
 
 # Measure memory
 `/usr/bin/time -v ./exec 2>&1 | grep "Maximum resident"`
