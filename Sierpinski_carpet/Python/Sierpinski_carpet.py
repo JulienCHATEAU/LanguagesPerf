@@ -1,18 +1,9 @@
-def in_carpet(x, y):
-    while True:
-        if x == 0 or y == 0:
-            return True
-        elif x % 3 == 1 and y % 3 == 1:
-            return False
+def sierpinski_carpet(n):
+  carpet = ["#"]
+  for i in range(n):
+    carpet = [x + x + x for x in carpet] + \
+             [x + x.replace("#"," ") + x for x in carpet] + \
+             [x + x + x for x in carpet]
+  return "\n".join(carpet)
  
-        x /= 3
-        y /= 3
- 
-def carpet(n):
-    for i in xrange(3 ** n):
-        for j in xrange(3 ** n):
-            if in_carpet(i, j):
-                print '*',
-            else:
-                print ' ',
-        print
+print(sierpinski_carpet(3))

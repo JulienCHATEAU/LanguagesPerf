@@ -1,8 +1,5 @@
 fn main() {
-    for i in 0..4 {
-        println!("\nN={}", i);
-        println!("{}", sierpinski_carpet(i));
-    }
+    println!("{}", sierpinski_carpet(3));
 }
  
 fn sierpinski_carpet(n: u32) -> String {
