@@ -137,8 +137,8 @@ void make_maze()
 int main(int c, char **v)
 {
 	setlocale(LC_ALL, "");
-	if (c < 2 || (w = atoi(v[1])) <= 0) w = 32;
-	if (c < 3 || (h = atoi(v[2])) <= 0) h = 32;
+	if (c < 2 || (w = atoi(v[1])) <= 0) w = 50;
+	if (c < 3 || (h = atoi(v[2])) <= 0) h = 40;
  
 	make_maze();
  

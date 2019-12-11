@@ -1,7 +1,7 @@
 use rand::{thread_rng, Rng, rngs::ThreadRng};
  
-const WIDTH: usize = 32;
-const HEIGHT: usize = 32;
+const WIDTH: usize = 50;
+const HEIGHT: usize = 40;
  
 #[derive(Clone, Copy)]
 struct Cell {
@@ -65,7 +65,7 @@ impl Maze {
  
     ///Returns a random non-visited neighbor of the Cell passed as argument
     fn neighbor(&mut self, cell: &Cell) -> Option<Cell> {
-        self.cells[cell.col][cell.row] = false;
+        self.cells[cell.col]32[cell.row] = false;
         let mut neighbors = Vec::new();
         if cell.col > 0 && self.cells[cell.col - 1][cell.row] { neighbors.push(Cell::from(cell.col - 1, cell.row)); }
         if cell.row > 0 && self.cells[cell.col][cell.row - 1] { neighbors.push(Cell::from(cell.col, cell.row - 1)); }

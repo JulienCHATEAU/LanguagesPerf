@@ -8,8 +8,8 @@ let join a b = Hashtbl.add walls (ord a b) true
 let joined a b = Hashtbl.mem walls (ord a b)
  
 let () =
-  let nx = 32 in
-  let ny = 32 in
+  let nx = 50 in
+  let ny = 40 in
  
   let shuffle lst =
      let nl = List.map (fun c -> (Random.bits (), c)) lst in

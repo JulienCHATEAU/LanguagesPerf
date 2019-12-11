@@ -81,8 +81,8 @@ public class MazeGeneration {
 	};
  
 	public static void main(String[] args) {
-		int x = args.length >= 1 ? (Integer.parseInt(args[0])) : 32;
-		int y = args.length == 2 ? (Integer.parseInt(args[1])) : 32;
+		int x = args.length >= 1 ? (Integer.parseInt(args[0])) : 50;
+		int y = args.length == 2 ? (Integer.parseInt(args[1])) : 40;
 		MazeGeneration maze = new MazeGeneration(x, y);
 		maze.display();
 	}

@@ -113,7 +113,7 @@ func (m *maze) g2(r, c int) {
  
 func main() {
     rand.Seed(time.Now().UnixNano())
-    m := newMaze(32, 32)
+    m := newMaze(50, 40)
     m.gen()
     fmt.Print(m)
 }

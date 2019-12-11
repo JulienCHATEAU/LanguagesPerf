@@ -62,4 +62,4 @@ function display(m) {
 	return text.join('');
 }
 
-display(maze(32,32));
+display(maze(50,40));
