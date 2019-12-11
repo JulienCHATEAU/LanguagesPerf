@@ -12,7 +12,7 @@ function decode(encodedNumber) {
     return number
 }
 
-for (let number = 0; number < Math.pow(2, 25); number++) {
+for (let number = 0; number < Math.pow(2, 20); number++) {
     const grayCode = encode(number)
     const decodedGrayCode = decode(grayCode)
 }

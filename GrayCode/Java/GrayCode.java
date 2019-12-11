@@ -12,7 +12,7 @@ public class GrayCode {
 
     public static void main(String[] args) {
         long enc;
-        for (int i = -1; i < java.lang.Math.pow(2, 25); i++) {
+        for (int i = -1; i < java.lang.Math.pow(2, 20); i++) {
             enc = grayEncode(i);
             grayDecode(enc);
         }

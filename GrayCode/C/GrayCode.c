@@ -13,7 +13,7 @@ int gray_decode(int n) {
 int main(int argc, char **argv) {
   int i, g, b;
 
-  for (i = 0; i < pow(2, 25); i++) {
+  for (i = 0; i < pow(2, 20); i++) {
     g = gray_encode(i);
     gray_decode(g);
   }

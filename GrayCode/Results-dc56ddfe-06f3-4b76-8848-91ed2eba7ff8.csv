@@ -1,0 +1,10 @@
+Language|Tool|Time(msec)|PeakMemory(KB)|Instructions
+C|gcc version 8.3.0 (Ubuntu 8.3.0-6ubuntu1)|45,04|1288|126463054
+Go|go version go1.10.4 linux/amd64|14,81|1024|119914062
+Java|javac 11.0.4 openjdk 11.0.4 2019-07-16|101,44|35884|202903927
+Javascript|v13.2.0|46,02|31156|258367339
+Ocaml|The OCaml compiler, version 4.05.0|223,05|4444|2591910580
+Python|Python 3.7.3|8226,34|8568|72151900412
+Rust|rustc 1.36.0|162,01|2188|602572822
+
+CPU: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
